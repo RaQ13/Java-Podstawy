@@ -8,7 +8,7 @@ public class InkrementacjaDekrementacja {
         System.out.println("wartość a: " + a);
 
         //postinkrementacja
-        //w wyniku postinkrementacji najapierw przypisana jesy wartość, następnie dopier
+        //w wyniku postinkrementacji najapierw przypisana jest wartość, następnie dopiero
         //zwiększenie jej
         int b = a++;
         System.out.println("wartość b: " + b); //0
