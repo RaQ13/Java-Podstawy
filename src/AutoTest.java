@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class AutoTest {
 
     public static void main(String[] args) {
@@ -30,6 +32,12 @@ public class AutoTest {
 
         //jeżeli nieprzypisze sie wartości, zostaną wypisane wartości domyślne:
         // Dla typu obiektowego np. String to null, dla prtostego int to 0
+
+        String imie = new String("kasia"); // String to też klasa
+        //przycsk ctrl pozwala na podejrzenie klasy
+        String imie2 = "kasia"; // można też tak
+        Scanner scanner = new Scanner(System.in); // Scanner i System to tez klasy
+        //można podejrzeć pole in korzystając z ctrl
 
     }
 }
