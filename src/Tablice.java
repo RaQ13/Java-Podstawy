@@ -2,7 +2,7 @@ public class Tablice {
 
     public static void main(String[] args) {
 
-        String[] imiona = new String[3];
+        String[] imiona = new String[3]; // w [] ile elementów zawiera tablica
 
         imiona[0] = "Iza";
         imiona[1] = "Basia";
