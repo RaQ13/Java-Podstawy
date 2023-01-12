@@ -1,6 +1,6 @@
 public class User {
 
-    public String username;
+    public String username; // muszą być wstępnie zadeklarowane
     public String password;
 
     //konstruktor
