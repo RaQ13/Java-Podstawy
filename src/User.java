@@ -9,8 +9,13 @@ public class User {
     }
 
     //konstruktor
-    public User(String user, String pass) { //zwracanym typem jest obiekt danej klasy
+    public User(String username, String password) { //zwracanym typem jest obiekt danej klasy
         //nie podaje się się return ani nazwy, jest to metoda która wykona się automatycznie
+        this.username = username;
+        this.password = password;
+
+//        username = user;
+//        password = pass;
         System.out.println("Hello z konstruktora");
     }
 
