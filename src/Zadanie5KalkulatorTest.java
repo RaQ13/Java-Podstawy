@@ -40,7 +40,5 @@ public class Zadanie5KalkulatorTest {
             default:
                 System.out.println("Wybierz prawidłową opcję");
         }
-
-
     }
 }
