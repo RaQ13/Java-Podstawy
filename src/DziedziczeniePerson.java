@@ -9,7 +9,7 @@ public class DziedziczeniePerson { //ikonka przy numerze linii wskazuje na wyst�
         this.age = age;
     };
 
-    public void eat() {
+    public void eat() { //ikonka obok numeru linii pokazuje że moteda jest nadpisywana przez metode w klasie podrzędnej
         System.out.println("I like pizza");
     }
 

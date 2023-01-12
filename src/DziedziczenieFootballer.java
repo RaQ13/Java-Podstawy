@@ -9,6 +9,10 @@ public class DziedziczenieFootballer extends DziedziczeniePerson{ //extends rozs
         System.out.println("Jestem w konstruktorze Footballer");
     }
 
+    public void eat() { // ikonka obok numeru linii pokazuje że metoda nadpisuje metode w klasie nadrzednej
+        System.out.println("I like healthy food");
+    }
+
     public void playFootball() {
         System.out.println("I am playing football in " + footballClub);
     }

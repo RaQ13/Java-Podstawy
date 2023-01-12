@@ -8,6 +8,10 @@ public class DziedziczenieMathTeacher extends DziedziczeniePerson {
         System.out.println("Jestem w konstruktorze MathTeacher");
     }
 
+    public void walk(){
+        System.out.println("I walk very fast");
+    }
+
     public void teachMatch() {
         System.out.println("I am teaching math");
     }
