@@ -6,6 +6,9 @@ public class KlaasaStudent {
     public String email;
     public int numerIndeksu;
 
+    public static String nazwaUczelni = "AGH";
+
+
     public void przedstawSie(){
         System.out.println("Nazywam się " + imie + " " + nazwisko);
     }

@@ -2,6 +2,9 @@ public class Zadanie4StudentChecker {
 
     public static void main(String[] args) {
 
+        //KlaasaStudent. // pokaże dostępne pole statyczne nazwaUczelni
+        String uczelnia = KlaasaStudent.nazwaUczelni;
+
         KlaasaStudent student012 = new KlaasaStudent();
 
         student012.imie = "Ania";
@@ -9,6 +12,8 @@ public class Zadanie4StudentChecker {
         student012.nick = "Ktitty23";
         student012.email = "aniakot23@gmail.com";
         student012.numerIndeksu = 12;
+        String uczelniaStudenta12 = student012.nazwaUczelni; //też ma dostęp do pola statycznego
+        //ale nie po to jest pole statyczne
 
         KlaasaStudent student013 = new KlaasaStudent();
 
