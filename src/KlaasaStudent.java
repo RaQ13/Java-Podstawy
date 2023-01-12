@@ -23,4 +23,27 @@ public class KlaasaStudent {
     public void podajEmail(){
         System.out.println("Moj email to: " + email);
     }
+
+    //public - identyfikator dostępu
+    //static - słowo kluczowe
+    //void - zwracany typ
+    public static void infoUczelnia () { //metoda statczna
+        //w metodzie statycznej można odwoływac się do pól statycznych
+        System.out.println("Moja uczelnia to " + nazwaUczelni); //pole statyczne nazwaUczelni
+
+        //nie można się odwołać do pól które są zależne od stworzenia obiektu
+//        System.out.println("Nazywam się " + imie + " " + nazwisko);
+
+        //nie da się wywołać metody, która nie jest statyczna wewnatrz metody statycznej
+//        przedstawSie()
+
+        //można odwołać się do metody statycznej wewnątrz innej metody statycznej
+        drugaMetoda();
+    }
+
+    public static void drugaMetoda() {
+        System.out.println("Jestem drugą metodą statyczną");
+    }
+
+
 }

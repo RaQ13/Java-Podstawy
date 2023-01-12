@@ -4,6 +4,7 @@ public class Zadanie4StudentChecker {
 
         //KlaasaStudent. // pokaże dostępne pole statyczne nazwaUczelni
         String uczelnia = KlaasaStudent.nazwaUczelni;
+        KlaasaStudent.infoUczelnia();
 
         KlaasaStudent student012 = new KlaasaStudent();
 
