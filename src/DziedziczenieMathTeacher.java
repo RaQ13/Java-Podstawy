@@ -9,6 +9,8 @@ public class DziedziczenieMathTeacher extends DziedziczeniePerson {
     }
 
     public void walk(){
+        super.walk(); //za pomocą słowa super można wywowałć metodę z konstruktora, która
+        // jest nadpisywana
         System.out.println("I walk very fast");
     }
 
