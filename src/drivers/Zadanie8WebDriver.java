@@ -1,3 +1,5 @@
+package drivers;
+
 public interface Zadanie8WebDriver {
 
     void get();

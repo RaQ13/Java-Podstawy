@@ -1,3 +1,6 @@
+import drivers.FirefoxDriverZadanie8;
+import drivers.Zadanie8WebDriver;
+
 public class KonwersjaCasting {
 
     public static void main(String[] args) {
@@ -20,7 +23,7 @@ public class KonwersjaCasting {
         /** rzutowanie typów */
 
         Zadanie8WebDriver driver = new FirefoxDriverZadanie8();
-//        FirefoxDriverZadanie8 firefoxDriver = driver; // zmienna driver zawiera ogólny typ i nie działa
+//        drivers.FirefoxDriverZadanie8 firefoxDriver = driver; // zmienna driver zawiera ogólny typ i nie działa
         FirefoxDriverZadanie8 firefoxDriver = (FirefoxDriverZadanie8) driver; //rzutowanie typu
         driver.get();
     }

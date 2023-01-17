@@ -1,3 +1,5 @@
+package drivers;
+
 public class ChromeDriverZadanie8 implements Zadanie8WebDriver {
     @Override
     public void get() {

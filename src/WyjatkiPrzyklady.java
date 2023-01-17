@@ -1,3 +1,7 @@
+import drivers.ChromeDriverZadanie8;
+import drivers.FirefoxDriverZadanie8;
+import drivers.Zadanie8WebDriver;
+
 public class WyjatkiPrzyklady {
 
     public static void main(String[] args) {
@@ -15,7 +19,7 @@ public class WyjatkiPrzyklady {
         /** Przykład 2 */
 
         Zadanie8WebDriver driver = getDriver("k"); //jeżeli złe dane
-        // Cannot invoke "Zadanie8WebDriver.get()" because "driver" is null
+        // Cannot invoke "drivers.Zadanie8WebDriver.get()" because "driver" is null
         driver.get();
         driver.findElementBy();
         driver.findElementBy();

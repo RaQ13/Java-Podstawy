@@ -1,3 +1,5 @@
+package drivers;
+
 public class FirefoxDriverZadanie8 implements Zadanie8WebDriver {
     @Override
     public void get() {
