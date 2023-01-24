@@ -14,7 +14,25 @@ public class WebDriverTest {
 
         // z użyciem polimorfizmu bez duplikacji kodu
 
-        Zadanie8WebDriver driver = getDriver("dsa");
+ /** Z enum */
+//        Zadanie8WebDriver driver = getDriver(DriverType.CHROME);
+//        Zadanie8WebDriver driver = getDriver(DriverType.FIREFOX);
+//        Zadanie8WebDriver driver = getDriver(DriverType.SAFARI);
+ /** Z enum z polami */
+          Zadanie8WebDriver driver = getDriver(DriverType.FIREFOX);
+//          Zadanie8WebDriver driver = getDriver(DriverType.CHROME);
+
+        /** Iterwanie po enumie */
+//        DriverType.values(); podejrz co zwraca
+        DriverType[] driverTypes = DriverType.values();
+        for (int i = 0; i < driverTypes.length; i++) {
+            System.out.println(driverTypes[i].name);
+            System.out.println(driverTypes[i].path);
+        }
+
+
+
+//        Zadanie8WebDriver driver = getDriver("dsa");
         driver.get();
         driver.findElementBy();
         driver.findElementBy();
@@ -24,16 +42,45 @@ public class WebDriverTest {
         driver.findElementBy();
     }
 
-    private static Zadanie8WebDriver getDriver(String name) throws NoValidBrowserName {
-        if (name.equals("chrome")) {
+    /** enum bez pól */
+
+//    private static Zadanie8WebDriver getDriver(DriverType type) throws NoValidBrowserName {
+//        if (type == DriverType.CHROME) {
+//            return new ChromeDriverZadanie8(); // zwracanie obiektu
+//        }
+//        else if (type == DriverType.FIREFOX) {
+//            return new FirefoxDriverZadanie8();
+//        }
+////        return null; // domyślna wartość
+//        throw new NoValidBrowserName("No valid browser name"); // z enum teoretycznie niepotrzebne
+//    }
+
+    /** enum z polami */
+
+        private static Zadanie8WebDriver getDriver(DriverType type) {
+        if (type.name.equals("chrome")) {
+            System.out.println(type.path);
             return new ChromeDriverZadanie8(); // zwracanie obiektu
         }
-        else if (name.equals("firefox")) {
+        else if (type.name.equals("firefox")) {
+            System.out.println(type.path);
             return new FirefoxDriverZadanie8();
         }
-//        return null; // domyślna wartość
-        throw new NoValidBrowserName("No valid browser name");
+        return null;
     }
+
+    /** checked */
+
+//    private static Zadanie8WebDriver getDriver(String name) throws NoValidBrowserName {
+//        if (name.equals("chrome")) {
+//            return new ChromeDriverZadanie8(); // zwracanie obiektu
+//        }
+//        else if (name.equals("firefox")) {
+//            return new FirefoxDriverZadanie8();
+//        }
+////        return null; // domyślna wartość
+//        throw new NoValidBrowserName("No valid browser name");
+//    }
 
     /** jeżeli wyjatek unchecked */
 
