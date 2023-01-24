@@ -1,5 +1,8 @@
 package lambda;
 
+// wyrażenie lambda to krótszy zapis klasy anonimowej, która jest implementacja interfejsu który posiada tylko 1 metode
+// czyli interfejsu funkcjonalnego
+
 public class StudentTest {
 
     public static void main(String[] args) {
